@@ -1,0 +1,67 @@
+<%- include('../includes/head.ejs') %> 
+    <link rel="stylesheet" href="/css/student.css">
+    </head>
+    <body>
+    <%- include('../includes/nav.ejs') %>
+        <div class="center">
+            <div>
+                <% if(errorMessage){ %>
+                    <p class="errorMessage"><%= errorMessage %> </p>
+                <% }else if(sucssesMessage){ %>
+                    <p class="sucssesMessage"><%= sucssesMessage %> </p>
+                <% } %>   
+                <% if(!studentStatus) { %>
+                    <div>
+                        <p>هویت شما تایید نشده است.جها تایید هویت روی لینک زیر کلیک کنید.</p>
+                        <a href="/class/<%= classId %>/student/identityConfirmation">تایید هویت</a>
+                    </div>
+                <% }else{ %>  
+                    <div class="information">
+                        <h2>لیست آزمون ها</h2>
+                        <h3>توجه داشته باشید شما تنها مجاز به یکبار شرکت در آزمون هستید.</h3>
+                        <h3>در طول آزمون از زدن دکمه برگشت خودداری کنید.</h3>
+                        <h3>شما تنها مجاز به ارسال دو تصویر هستید.</h3>
+                    </div>
+
+                    <div>
+                        <a href="/examExample">نمونه سوال</a>
+                    </div>
+
+                    <% if(examExist){ %> 
+                        <table class="table"> 
+                            <tr>
+                                <th colspan="4">آزمون ها</th>
+                            </tr>
+                            <tr>
+                                <th>ردیف</th>
+                                <th>عنوان</th>
+                                <th colspan="2">وضعیت</th>
+                            </tr>
+                            <tr>
+                                <td>0</td>
+                                <td>نمونه سوال</td>
+                                <td><a href="/examExample">شروع آزمون</a></td>
+                            </tr>
+                            <% if(examExist) { %>
+                                <% for(let i=0;i<exams.length;i++) { %>
+                                    <% if(exams[i].examId.AvailableToTheStudent) { %> 
+                                        <tr>
+                                            <td><%= i+1 %></td>
+                                            <td><%= exams[i].examId.title %> </td>
+                                            <td>در دسترس</td>
+                                            <td>
+                                                <form action="/class/<%= classId %>/exam" method="POST">
+                                                    <input type="hidden" name="examId" id="exam" value="<%= exams[i].examId._id %>">
+                                                    <button type="submit" id="start">شروع آزمون</button>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                    <% } %> 
+                                <% } %>  
+                            <% } %>  
+                        </table>
+                    <% } %> 
+                <% } %> 
+            </div>
+        </div>
+<%- include('../includes/footer.ejs') %> 

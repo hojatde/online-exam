@@ -1,0 +1,51 @@
+<%- include('../includes/head.ejs') %> 
+    <link rel="stylesheet" href="/css/reviwed.css">
+    </head>
+    <body>
+    <%- include('../includes/nav.ejs') %>
+        <div class="center">
+            <div class="box">
+                <% for(let i=0;i<answer.length;i++) { %>
+                    <div class="answer">
+                        <label for=""><%= questions[i].text %> </label>
+                        <% if(questions[i].imageUrl) { %>
+                            <img src="/<%= questions[i].imageUrl %>" alt="">
+                        <% } %>  
+                        <p><%= answer[i].text %> </p>
+                        نمره: <input type="text" name="point" class="point" id="point" onchange="calcutePoint()">
+                    </div>
+                <% } %> 
+
+                <h2>
+                    عکس ها ارسالی دانش آموز
+                </h2>
+                <% for(let i=0;i<studentImages.length;i++) { %>
+                    <div class="image">
+                        <img src="/<%= studentImages[i].imageUrl %> " alt="">
+                        نمره: <input type="text" name="point" class="point" id="point" onchange="calcutePoint()">
+                    </div>
+                <% } %>  
+                
+                <form action="/teacher/class/<%= classId %>/exam/view/<%= examId %>/point" method="POST">
+                    <input type="hidden" name="studentId" value="<%= studentId %>">
+                    <p>مجموع نمرات = <input type="text" name="totalPoint" class="point" id="sumPoint"> </p>
+                    <button type="submit">ارسال</button>
+                </form>
+            </div>
+        </div>
+        <script>
+            function calcutePoint(){
+                const list = document.getElementsByName('point');
+                listLength = list.length;
+                let sum=0;
+                for(let i=0;i<listLength;i++){
+                    let p =(parseFloat(list[i].value))
+                    if(!Number.isNaN(p)){
+                        console.log('number : ',p)
+                        sum = sum + p;
+                    }
+                }
+                document.getElementById('sumPoint').value = sum;
+            }
+        </script>
+<%- include('../includes/footer.ejs') %> 

@@ -1,0 +1,594 @@
+
+
+@media only screen and (max-width:920px){
+    .box{
+        display: block;
+        margin-top: 40px !important;
+        padding: 20px;
+        width: 700px;
+        border: 2px solid rgb(0, 0, 0);
+        margin :auto;
+        text-align: center;
+        border-radius: 2px;
+    }
+    
+    .box label{
+        display: block;
+        float: right;
+    }
+    
+    .box input{
+        font-size: 12px;
+        padding: 5px;
+        border-radius: 2px;
+        margin-bottom: 15px;
+    }
+    
+    .box textarea{
+        border-radius: 2px;
+        border: 2px solid black;
+        resize: none;
+        font-size: 15px;
+        padding: 5px;
+    }
+    
+    .box button{
+        border: none;
+        padding: 5px;
+    }
+    
+    .box div{
+        margin-top: 15px;
+    }
+    
+    .question{
+        text-align: center;
+        direction: ltr;
+        width: 650px;
+        padding: 10px;
+        border: 1px solid blue;
+        margin: auto;
+        box-shadow: 2px 2px 10px blue;
+        border-radius: 3px;
+        margin-bottom: 8px !important;
+        
+    }
+    .question form{
+        display: inline;
+    }
+    .question textarea{
+    
+        display: block;
+        resize: none;
+        border: none;
+        background-color: rgb(223, 238, 175);
+        padding: 5px;
+        border-radius: 2px;
+        font-size: 12px;
+    }
+    
+    .question button{
+        margin-top: 8px !important;
+        border: none;
+        background-color:#98af4c;
+        border-radius: 2px;
+        padding: 5px;
+        margin: auto;
+        display: inline;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .question h2{
+        direction: rtl;
+        text-decoration: underline;
+        text-align: center;
+    }
+    
+    .question label{
+        font-size: 12px;
+        text-shadow: 1px 1px 5px black;
+    }
+    
+    
+    
+    #send{
+        background-color: #4CAF50;
+    }
+    #newQuestion{
+        text-shadow: none;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 2px;
+        margin: auto;
+        background-color: cornflowerblue;
+        text-align: center;
+    }
+    #delete{
+        background-color: rgb(216, 115, 115);
+    }
+    
+    .boxStudentsExam{
+        width: 500px;
+        margin: auto;
+    }
+    
+    .addExam{
+        margin-top: 20px !important;
+        margin: auto;
+        width: 200px;
+        padding: 10px;
+        border: 2px solid rgb(13, 13, 14);
+        border-radius: 3px;
+        border-style: inset;
+        text-align: center;
+    }
+    
+    .addExam input{
+        border: 1px black;
+        border-style: inset;
+        border-radius: 3px;
+        background-color: rgb(255, 255, 255);
+        padding: 5px;
+    }
+    
+    .addExam button{
+        border: none;
+        padding: 5px 10px 5px 10px;
+        border-radius: 2px;
+        background-color: rgb(0, 171, 51);
+    }
+    
+    .table{
+        margin-top: 20px !important;
+        padding: 10px;
+        margin: auto;
+        border: none;
+        text-align: center;
+        border-collapse: collapse;
+        margin-bottom: 50px;
+    }
+    
+    .table td, th {
+        border: 1px solid #ddd;
+        padding: 5px;
+    }
+    
+    .table th {
+      padding-top: 8px;
+      padding-bottom: 8px;
+      background-color: #6ca7ac;
+      color: white;
+    }
+    
+    .img{
+        display: block;
+        max-width: 480px;
+        max-height: 200px;
+    }
+    
+    #deleteButton{
+        padding: 5px 10px 5px 10px;
+        border-radius: 5px;
+        background-color: rgb(255 0 0 / 60%);
+        border: none;
+    }
+    
+    #openAndClose{
+        width: 50px;
+        padding: 5px 10px 5px 10px;
+        border-radius: 3px;
+        background-color: rgb(196, 213, 47);
+        border: none;
+    }
+    
+    #edit{
+        background-color: rgb(102, 231, 192);
+        width: 50px;
+        border-radius: 3px;
+        padding: 5px 10px 5px 10px;
+        text-decoration: none;
+        color: black;
+    }
+
+}
+@media only screen and (max-width:600px){
+    .center{
+        font-size: 10px;
+    }
+    .box{
+        font-size: 10px;
+        display: block;
+        margin-top: 20px !important;
+        padding: 10px;
+        width: 320px;
+        border: 2px solid rgb(0, 0, 0);
+        margin :auto;
+        text-align: center;
+        border-radius: 2px;
+    }
+    
+    .box label{
+        display: block;
+        float: right;
+    }
+    
+    .box input{
+        font-size: 12px;
+        padding: 3px;
+        border-radius: 2px;
+        margin-bottom: 10px;
+    }
+    
+    .box textarea{
+        border-radius: 2px;
+        border: 2px solid black;
+        resize: none;
+        font-size: 7px;
+        padding: 5px;
+    }
+    
+    .box button{
+        border: none;
+        padding: 5px;
+    }
+    
+    .box div{
+        margin-top: 10px;
+    }
+    
+    .question{
+        text-align: center;
+        direction: ltr;
+        width: 320px;
+        padding: 10px;
+        border: 1px solid blue;
+        margin: auto;
+        box-shadow: 2px 2px 10px blue;
+        border-radius: 3px;
+        margin-bottom: 8px !important;
+        
+    }
+    .question form{
+        display: inline;
+    }
+    .question textarea{
+    
+        display: block;
+        resize: none;
+        border: none;
+        background-color: rgb(223, 238, 175);
+        padding: 5px;
+        border-radius: 2px;
+        font-size: 10px;
+    }
+    
+    .question button{
+        margin-top: 8px !important;
+        border: none;
+        background-color:#98af4c;
+        border-radius: 2px;
+        padding: 5px;
+        margin: auto;
+        display: inline;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .question h2{
+        direction: rtl;
+        text-decoration: underline;
+        text-align: center;
+    }
+    
+    .question label{
+        font-size: 20px;
+        text-shadow: 1px 1px 5px black;
+    }
+    
+    
+    
+    #send{
+        background-color: #4CAF50;
+    }
+    #newQuestion{
+        text-shadow: none;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-radius: 2px;
+        margin: auto;
+        background-color: cornflowerblue;
+        text-align: center;
+    }
+    #delete{
+        background-color: rgb(216, 115, 115);
+    }
+    
+    .boxStudentsExam{
+        width: 320px;
+        margin: auto;
+    }
+    
+    .addExam{
+        margin-top: 20px !important;
+        margin: auto;
+        width: 200px;
+        padding: 10px;
+        border: 2px solid rgb(13, 13, 14);
+        border-radius: 3px;
+        border-style: inset;
+        text-align: center;
+    }
+    
+    .addExam input{
+        border: 1px black;
+        border-style: inset;
+        border-radius: 3px;
+        background-color: rgb(255, 255, 255);
+        padding: 5px;
+    }
+    
+    .addExam button{
+        border: none;
+        padding: 5px 10px 5px 10px;
+        border-radius: 2px;
+        background-color: rgb(0, 171, 51);
+    }
+    
+    .table{
+        font-size: 10px;
+        width: 310px;
+        margin-top: 20px !important;
+        padding: 10px;
+        margin: auto;
+        border: none;
+        text-align: center;
+        border-collapse: collapse;
+        margin-bottom: 30px;
+    }
+    
+    .table td, th {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+    
+    .table th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      background-color: #6ca7ac;
+      color: white;
+    }
+    
+    .img{
+        margin: auto;
+        display: block;
+        max-width: 300px;
+        max-height: 200px;
+    }
+    
+    #deleteButton{
+        font-size: 5px;
+        padding: 5px 5px 5px 5px;
+        border-radius: 5px;
+        background-color: rgb(255 0 0 / 60%);
+        border: none;
+    }
+    
+    #openAndClose{
+        font-size: 5px;
+        width: 20px;
+        padding: 5px 5px 5px 5px;
+        border-radius: 3px;
+        background-color: rgb(196, 213, 47);
+        border: none;
+    }
+    
+    #edit{
+        font-size: 5px;
+        background-color: rgb(102, 231, 192);
+        width: 20px;
+        border-radius: 3px;
+        padding: 5px 5px 5px 5px;
+        text-decoration: none;
+        color: black;
+    }
+}
+@media only screen and (min-width:920px){
+    .box{
+        display: block;
+        margin-top: 40px !important;
+        padding: 20px;
+        width: 400px;
+        border: 2px solid rgb(0, 0, 0);
+        margin :auto;
+        text-align: center;
+        border-radius: 2px;
+    }
+    
+    .box label{
+        display: block;
+        float: right;
+    }
+    
+    .box input{
+        font-size: 15px;
+        padding: 5px;
+        border-radius: 2px;
+        margin-bottom: 20px;
+    }
+    
+    .box textarea{
+        border-radius: 2px;
+        border: 2px solid black;
+        resize: none;
+        font-size: 15px;
+        padding: 5px;
+    }
+    
+    .box button{
+        border: none;
+        padding: 5px;
+    }
+    
+    .box div{
+        margin-top: 20px;
+    }
+    
+    .question{
+        text-align: center;
+        direction: ltr;
+        width: 700px;
+        padding: 20px;
+        border: 1px solid blue;
+        margin: auto;
+        box-shadow: 2px 2px 10px blue;
+        border-radius: 3px;
+        margin-bottom: 8px !important;
+        
+    }
+    .question form{
+        display: inline;
+    }
+    .question textarea{
+        margin: auto;
+        display: block;
+        resize: none;
+        border: none;
+        background-color: rgb(223, 238, 175);
+        padding: 10px;
+        border-radius: 2px;
+        font-size: 15px;
+    }
+    .question img{
+        margin: auto;
+    }
+    .question button{
+        margin-top: 8px !important;
+        border: none;
+        background-color:#98af4c;
+        border-radius: 2px;
+        padding: 5px;
+        margin: auto;
+        display: inline;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .question h2{
+        direction: rtl;
+        text-decoration: underline;
+        text-align: center;
+    }
+    
+    .question label{
+        font-size: 20px;
+        text-shadow: 1px 1px 5px black;
+    }
+    
+    
+    
+    #send{
+        background-color: #4CAF50;
+    }
+    #newQuestion{
+        text-shadow: none;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-radius: 2px;
+        margin: auto;
+        background-color: cornflowerblue;
+        text-align: center;
+    }
+    #delete{
+        background-color: rgb(216, 115, 115);
+    }
+    
+    .boxStudentsExam{
+        width: 800px;
+        margin: auto;
+    }
+    
+    .addExam{
+        margin-top: 20px !important;
+        margin: auto;
+        width: 300px;
+        padding: 20px;
+        border: 2px solid rgb(13, 13, 14);
+        border-radius: 3px;
+        border-style: inset;
+        text-align: center;
+    }
+    
+    .addExam input{
+        border: 1px black;
+        border-style: inset;
+        border-radius: 3px;
+        background-color: rgb(255, 255, 255);
+        padding: 5px;
+    }
+    
+    .addExam button{
+        border: none;
+        padding: 5px 20px 5px 20px;
+        border-radius: 2px;
+        background-color: rgb(0, 171, 51);
+    }
+    
+    .table{
+        margin-top: 20px !important;
+        padding: 20px;
+        margin: auto;
+        border: none;
+        text-align: center;
+        border-collapse: collapse;
+        margin-bottom: 50px;
+    }
+    
+    .table td, th {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+    
+    .table th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      background-color: #6ca7ac;
+      color: white;
+    }
+    
+    .img{
+        display: block;
+        max-width: 700px;
+        max-height: 200px;
+    }
+    
+    #openAndClose{
+        width: 80px;
+        padding: 5px 20px 5px 20px;
+        border-radius: 3px;
+        background-color: rgb(196, 213, 47);
+        border: none;
+    }
+    
+    #edit{
+        background-color: rgb(102, 231, 192);
+        width: 50px;
+        border-radius: 3px;
+        padding: 5px 10px 5px 10px;
+        text-decoration: none;
+        color: black;
+    }
+
+}
+
+#sendNewQuestion{
+    margin-bottom: 10px;
+}
+.sendFormBox{
+    margin-top: 10px;
+    direction: rtl;
+}
+
+#answer{
+    direction:rtl;
+}

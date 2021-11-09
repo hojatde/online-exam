@@ -1,0 +1,47 @@
+<%- include('../includes/head.ejs') %> 
+    <link rel="stylesheet" href="/css/questions.css">
+    </head>
+    <body>
+    <%- include('../includes/nav.ejs') %>
+        <div class="center">
+            <div class="box">
+                <form action="/class/<%= classId %>/exam/answer" id="form" method="POST" enctype="multipart/form-data">
+                    <input type="hidden" name="examId" value="<%= examId %>">
+                    <input type="hidden" name="classId" value="<%= classId %>" id="classId">
+                    <% for(let i=0;i<questions.length;i++) { %>
+                        <div class="questionBox">
+                            <div class="question">
+                            
+                            <p id="fa" style="white-space: pre-wrap;"><%= questions[i].text%></p>
+                            <input type="hidden" name="questionId[]" value="<%= questions[i]._id %>">
+                                <% if(questions[i].imageUrl) { %>
+                                    <div class="image">
+                                        <img src="/<%= questions[i].imageUrl %> " alt="">
+                                    </div>
+                                <% } %> 
+                                <div class="textArea">
+                                    <textarea name="answer[]" id="answer"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    <% } %>
+                    <div class="selectImageBox">
+                        <div class="selectImage">
+                            <label for="selectImage">انتخاب تصویر 1 </label>
+                            <input type="file" name="image"">
+                        </div> 
+                        <div class="selectImage">
+                            <label for="selectImage">انتخاب تصویر 2 </label>
+                            <input type="file" name="image"">
+                        </div>
+                    </div>
+                    <button type="button" onclick="sendInfo(this)" id="sendAnswer">ارسال</button>
+                    <div class="boxProgress" id="progressBar" style="display:none ;">
+                        <p>در حال ارسال</p>
+                        <progress class="progress" id="prog" min="10" max="100" value="0">0%</progress>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="/js/send.js"></script>
+<%- include('../includes/footer.ejs') %> 

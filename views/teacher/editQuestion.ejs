@@ -1,0 +1,45 @@
+<%- include('../includes/head.ejs') %> 
+    <link rel="stylesheet" href="/css/exam.css">
+    </head>
+    <body>
+    <%- include('../includes/nav.ejs') %>
+        <div class="center" id="center">
+            
+            <input type="hidden" name="formExamId" id="formExamId" value="<%= examId %>">
+            <input type="hidden" name="formClassId" id="formClassId" value="<%= classId %>">
+            <% if(questions) { %>
+                <% for(let i=0;i<questions.length;i++) { %>
+                    <div class="question" id="boxQuestion">
+                        <h4 class="numberOfQuestion"><%= i+1 %> </h4>
+                        <form  method="POST">
+                            <input type="hidden" name="questionId" value="<%= questions[i]._id %>">
+                            <textarea name="text" id="fa" cols="43" rows="3"><%= questions[i].text %> </textarea>
+                            <% if(questions[i].imageUrl) { %>
+                                <img src="/<%= questions[i].imageUrl %> " alt="" class="img">
+                            <% } %> 
+                            <button type="button" value="editQuestion" id="edit" onclick="upload(this)">ویرایش</button>
+                            <button type="button" value="deleteQuestion" id="deleteButton" onclick="upload(this)">حذف</button>
+                        </form>
+                    </div>
+                <% } %>   
+            <% } %> 
+            <div class="question" id="newQuestion2">
+                <form id="form">
+                    <h2>اضافه کردن سوال جدید</h2>
+                    <textarea name="text" id="fa" cols="43" rows="3"></textarea>
+                    <div class="sendFormBox">
+                        انتخاب تصویر : <input type="file" name="image" id="urlImage">
+                        <button type="button" value="newQuestion" id="sendNewQuestion" onclick="upload(this)" >اضافه کردن</button>
+                    </div>
+                </form>
+                <div class="boxProgress" id="progressBar" style="display:none ;">
+                    <p>در حال ارسال</p>
+                    <progress class="progress" id="prog" min="10" max="100" value="0">0%</progress>
+                </div>
+            </div>
+            <button onclick="test2()">fetch</button>
+        </div>
+    <script src="/js/upload.js">
+    </script>
+    <script src="/js/test2.js"></script>
+<%- include('../includes/footer.ejs') %> 

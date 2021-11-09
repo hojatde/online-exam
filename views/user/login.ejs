@@ -1,0 +1,20 @@
+<%- include('../includes/head.ejs') %> 
+    <link rel="stylesheet" href="/css/login.css">
+    </head>
+    <body>
+    <%- include('../includes/nav.ejs') %>
+        <div class="center">
+            <div class="form">
+                <form action="/login" method="POST">
+                    <% if(errorMessage){ %>
+                        <p class="errorMessage"><%= errorMessage %> </p>
+                    <% } %> 
+                    <label for="username">نام کاربری</label>
+                    <input type="text" name="username" id="username">
+                    <label for="password">رمز عبور</label>
+                    <input type="text" name="password" id="password">
+                    <button type="submit" >ورود</button>
+                </form>
+            </div>
+        </div>
+<%- include('../includes/footer.ejs') %> 

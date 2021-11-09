@@ -1,0 +1,37 @@
+<%- include('../includes/head.ejs') %> 
+    <link rel="stylesheet" href="/css/exam.css">
+    </head>
+    <body>
+    <%- include('../includes/nav.ejs') %>
+        <div class="center">
+            <% if (answers) { %>
+                <div class="boxStudentsExam">
+                    <table class="table">
+                        <tr>
+                            <th>ردیف</th>
+                            <th>نام</th>
+                            <th>شماره دانش آموزی</th>
+                            <th>زمان ثبت ازمون</th>
+                            <th>نمره</th>
+                        </tr>
+                        <% for(let i=0;i<answers.length;i++){ %>
+                            <tr>
+                                <td><%= i+1 %></th>
+                                <td><%= answers[i].studentId.name %> <%= answers[i].studentId.family %> </td>
+                                <td><%= answers[i].studentId.username %> </td>
+                                <td><%= answers[i].registerTime %> </td>
+                                <td>
+                                    <% if(answers[i].reviewed === true){ %> 
+                                        <%= answers[i].point %> 
+                                    <% }else{ %>
+                                        برسی نشده
+                                    <% } %>  
+                                </td>
+                                <td><a href="/teacher/class/<%= classId %>/exam/view/<%= examId %>/reviewed?studentId=<%= answers[i].studentId._id %>">مشاهده</a></td>
+                            </tr>
+                        <% } %>  
+                    </table>
+                </div>
+            <% } %>
+        </div>
+<%- include('../includes/footer.ejs') %> 

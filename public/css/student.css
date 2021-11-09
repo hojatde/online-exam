@@ -1,0 +1,210 @@
+
+@media only screen and (max-width:920px){
+    .box{
+        width: 400px;
+        margin: auto;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .table{
+        margin-top: 20px !important;
+        padding: 20px;
+        margin: auto;
+        border: none;
+        text-align: center;
+        border-collapse: collapse;
+    }
+    
+    .table td, th {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+    
+    .table th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      background-color: #6ca7ac;
+      color: white;
+    }
+    
+    .information{
+        padding: 10px;
+        border: 10px inset#df9073;
+    }
+    
+    #start{
+        border: none;
+        padding: 5px 20px 5px 20px;
+        background-color: rgb(213, 147, 101);
+        width: 100px;
+        border-radius: 3px;
+    }
+    
+    #sucsses{
+        background-color: rgb(37, 162, 21);
+        color: white;
+        font-size: 25px;
+        padding: 20px 20px 20px 20px;
+        border-radius: 5px;
+    }
+    
+    .errorMessage{
+        padding: 10px;
+        border: 1px inset red;
+        border-radius: 3px;
+        display: block;
+        background-color: rgb(233, 191, 191);
+        text-align: center;
+    }
+    
+    .sucssesMessage{
+        padding: 10px;
+        border: 1px inset rgb(57, 88, 54);
+        border-radius: 3px;
+        display: block;
+        background-color: rgb(159, 241, 126);
+        text-align: center;
+    }
+}
+@media only screen and (max-width:600px){
+    body{
+        font-size: 10px;
+    }
+    .box{
+        width: 340px;
+        margin: auto;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .table{
+        margin-top: 10px !important;
+        padding: 10px;
+        margin: auto;
+        border: none;
+        text-align: center;
+        border-collapse: collapse;
+    }
+    
+    .table td, th {
+        border: 1px solid #ddd;
+        padding: 5px;
+    }
+    
+    .table th {
+      padding-top: 6px;
+      padding-bottom: 6px;
+      background-color: #6ca7ac;
+      color: white;
+    }
+    
+    .information{
+        padding: 5px;
+        border: 5px inset#df9073;
+    }
+    
+    #start{
+        font-size: 10px;
+        border: none;
+        padding: 5px 10px 5px 10px;
+        background-color: rgb(213, 147, 101);
+        width: 80px;
+        border-radius: 3px;
+    }
+    
+    #sucsses{
+        background-color: rgb(37, 162, 21);
+        color: white;
+        font-size: 15px;
+        padding: 10px 10px 10px 10px;
+        border-radius: 5px;
+    }
+    
+    .errorMessage{
+        padding: 10px;
+        border: 1px inset red;
+        border-radius: 3px;
+        display: block;
+        background-color: rgb(233, 191, 191);
+        text-align: center;
+    }
+    
+    .sucssesMessage{
+        padding: 10px;
+        border: 1px inset rgb(57, 88, 54);
+        border-radius: 3px;
+        display: block;
+        background-color: rgb(159, 241, 126);
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width:920px){
+    .box{
+        width: 400px;
+        margin: auto;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .table{
+        margin-top: 20px !important;
+        padding: 20px;
+        margin: auto;
+        border: none;
+        text-align: center;
+        border-collapse: collapse;
+    }
+    
+    .table td, th {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+    
+    .table th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      background-color: #6ca7ac;
+      color: white;
+    }
+    
+    .information{
+        padding: 10px;
+        border: 10px inset#df9073;
+    }
+    
+    #start{
+        border: none;
+        padding: 5px 20px 5px 20px;
+        background-color: rgb(213, 147, 101);
+        width: 100px;
+        border-radius: 3px;
+    }
+    
+    #sucsses{
+        background-color: rgb(37, 162, 21);
+        color: white;
+        font-size: 25px;
+        padding: 20px 20px 20px 20px;
+        border-radius: 5px;
+    }
+    
+    .errorMessage{
+        padding: 10px;
+        border: 1px inset red;
+        border-radius: 3px;
+        display: block;
+        background-color: rgb(233, 191, 191);
+        text-align: center;
+    }
+    
+    .sucssesMessage{
+        padding: 10px;
+        border: 1px inset rgb(57, 88, 54);
+        border-radius: 3px;
+        display: block;
+        background-color: rgb(159, 241, 126);
+        text-align: center;
+    }
+}

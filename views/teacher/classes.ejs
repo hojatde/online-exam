@@ -1,0 +1,30 @@
+<%- include('../includes/head.ejs') %> 
+    <link rel="stylesheet" href="/css/classes.css">
+    </head>
+    <body>
+    <%- include('../includes/nav.ejs') %>
+        <div class="center">
+            <div class="box">
+                <div class="information">
+                    <h3>لیست کلاس هایی که شما به عنوان دبیر به ان دسترسی دارید.</h3>
+                </div>
+                <table class="table">
+                    <tr>
+                        <th>ردیف</th>
+                        <th>شماره کلاس</th>
+                        <th>لیست شرکت کنندگان</th>
+                        <th>لیست آزمون ها</th>
+                    </tr>
+                    <% for(let i=0;i<classes.length;i++){ %>
+                        <tr>
+                            <td><%= i+1%> </td>
+                            <td><%= classes[i].classId.number %> </td>
+                            <td><a href="/teacher/class/<%= classes[i].classId._id %>">مشاهده</a></td>
+                            <td><a href="/teacher/class/<%= classes[i].classId._id %>/exams">مشاهده</a></td>
+                        </tr>
+                    <% } %>  
+                </table>
+            </div>
+            
+        </div>
+<%- include('../includes/footer.ejs') %> 

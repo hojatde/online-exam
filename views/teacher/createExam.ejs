@@ -1,0 +1,23 @@
+<%- include('../includes/head.ejs') %> 
+    <link rel="stylesheet" href="/css/exam.css">
+    </head>
+    <body>
+    <%- include('../includes/nav.ejs') %>
+        <div class="center">
+            <div class="box">
+                <form action="/teacher/class/<%= classId %>/createExam " method="POST">
+                    <div>
+                        <label for="question">سوال :</label>
+                        <textarea name="question" id="question" cols="35" rows="5"></textarea>
+                    </div>
+                    <div>
+                        <label for="answer">پاسخ :</label>
+                        <input type="text" name="answer" id="answer">
+                    </div>
+                    <label for="other"></label>
+                    <button type="submit">اضافه کردن</button>
+                </form>
+            </div>
+        </div>
+
+<%- include('../includes/footer.ejs') %> 

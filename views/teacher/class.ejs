@@ -1,0 +1,26 @@
+<%- include('../includes/head.ejs') %> 
+    <link rel="stylesheet" href="/css/classes.css">
+    <link rel="stylesheet" href="/css/classes.css">
+    </head>
+    <body>
+    <%- include('../includes/nav.ejs') %>
+        <div class="center">
+            <div class="box">
+                <table class="table">
+                    <tr>
+                        <th colspan="2">شرکت کنندگان</th>
+                    </tr>
+                    <tr>
+                        <th>ردیف</th>
+                        <th>نام و نام خانوادگی</th>
+                    </tr>
+                    <% for(let i=0;i<students.length;i++){ %>
+                        <tr>
+                            <td><%= i+1%> </td>
+                            <td><%= students[i].studentId.name %> </td>
+                        </tr>
+                    <% } %>  
+                </table>
+            </div>
+        </div>
+<%- include('../includes/footer.ejs') %> 

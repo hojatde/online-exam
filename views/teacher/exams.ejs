@@ -1,0 +1,76 @@
+<%- include('../includes/head.ejs') %> 
+    <link rel="stylesheet" href="/css/classes.css">
+    <link rel="stylesheet" href="/css/exam.css">
+    </head>
+    <body>
+    <%- include('../includes/nav.ejs') %>
+        <div class="center">
+            <% if(exams){ %>
+
+                <table class="table">
+                    <tr>
+                        <th colspan="6">آزمون ها</th>
+                    </tr>
+                    <tr>
+                        <th>ردیف</th>
+                        <th>عنوان</th>
+                        <th colspan="4">دسترسی</th>
+                    </tr>
+                    <% for(let i=0;i<exams.length;i++){ %>
+                        <tr>
+                            <td><%= i+1%> </td>
+                            <td><%= exams[i].examId.title %></td>
+                            <% if(!exams[i].examId.finished) { %>
+                                <td><a id="edit" href="/teacher/class/<%= classId %>/edit/?exam=<%= exams[i].examId._id %>">ویرایش</a></td>
+                                <td>
+                                    <form action="/teacher/class/<%= classId %>/exam/delete" method="POST">
+                                        <input type="hidden" name="examId" value="<%= exams[i].examId._id %>">
+                                        <button type="submit" id="deleteButton">حذف</button>
+                                    </form>
+                                </td>
+                                <td>
+                                    <% if(exams[i].examId.AvailableToTheStudent) { %> 
+                                        
+                                        <form action="/teacher/class/<%= classId %>/exam/close" method="POST">
+                                            <input type="hidden" name="examId" value="<%= exams[i].examId._id %>">
+                                            <button type="submit" id="openAndClose">بستن</button>
+                                        </form>
+                                    <% }else {%>
+                                        <form action="/teacher/class/<%= classId %>/exam/open" method="POST">
+                                            <input type="hidden" name="examId" value="<%= exams[i].examId._id %>">
+                                            <button type="submit" id="openAndClose">باز کردن</button>
+                                        </form>
+                                    <% } %>  
+                                </td>
+                            <% } %>  
+                            <td>
+                                <% if(exams[i].examId.finished) { %>
+                                    پایان یافته
+                                <% }else{ %>
+                                    <form action="/teacher/class/<%= classId %>/exam/finish" method="POST">
+                                        <input type="hidden" name="examId" value="<%= exams[i].examId._id %>">
+                                        <button type="submit" id="openAndClose">پایان</button>
+                                    </form>
+                                <% } %>   
+                            </td>
+                            <% if(exams[i].examId.finished) { %>
+                                <td>
+                                    <a href="/teacher/class/<%= classId %>/exam/view/<%= exams[i].examId._id %>">مشاهده نمرات</a>
+                                </td>
+                            <% } %> 
+                            
+                        </tr>
+                    <% } %>  
+                </table>
+            <% } %> 
+
+            <div class="addExam">
+                <form action="/teacher/class/<%= classId %>/createExam" method="POST">
+                    <h2>ساخت آزمون جدید</h2>
+                    <label for="title">عنوان : </label>
+                    <input type="text" name="title" id="title">
+                    <button type="submit">ساخت</button>
+                </form>
+            </div>
+        </div>
+<%- include('../includes/footer.ejs') %> 

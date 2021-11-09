@@ -1,0 +1,59 @@
+<%- include('../includes/head.ejs') %> 
+    <link rel="stylesheet" href="/css/login.css">
+    </head>
+    <body>
+    <%- include('../includes/nav.ejs') %>
+        <div class="center">
+            <div class="">
+                <% if(errorMessage){ %>
+                    <p class="errorMessage"><%= errorMessage %> </p>
+                <% }else if(sucssesMessage){ %>
+                    <p class="sucssesMessage"><%= sucssesMessage %> </p>
+                <% } %>  
+                <p>لیست دبیران</p>
+                <table class="table">
+                    <tr>
+                        <th>ردیف</th>
+                        <th>نام و نام خانوادگی</th>
+                        <th>شناسه</th>
+                        <th></th>
+                    </tr>    
+                    <% for(let i=0;i<teachersList.length;i++) { %>
+                        <tr>
+                            <td><%= i+1 %></td>
+                            <td><%= teachersList[i].teacherId.name%></td>
+                            <td><%= teachersList[i].teacherId.username %></td>
+                            <td>
+                                <form action="/admin/class/<%= classId %>/deleteTeacherFromClass" method="POST">
+                                    <input type="hidden" name="teacherId" value="<%= teachersList[i].teacherId._id %>">
+                                    <button type="submit" id="deleteButton">حذف</button>
+                                </form>
+                            </td>
+                        </tr>
+                    <% } %>  
+                </table>
+                <p>لیست دانش اموزان</p>
+                <table class="table">
+                    <tr>
+                        <th>ردیف</th>
+                        <th>نام</th>
+                        <th>نام کاربری</th>
+                        <th></th>
+                    </tr>
+                    <% for(let i=0;i<studentsList.length;i++) { %>
+                        <tr>
+                            <td><%= i+1 %></td>
+                            <td><%= studentsList[i].studentId.name %></td>
+                            <td><%= studentsList[i].studentId.username %> </td>
+                            <td>
+                                <form action="/admin/class/<%= classId %>/deleteStudentFromClass" method="POST">
+                                    <input type="hidden" name="studentId" value="<%= studentsList[i].studentId._id %>">
+                                    <button type="submit" id="deleteButton">حذف</button>
+                                </form>
+                            </td>
+                        </tr>
+                    <% } %>  
+                </table>
+            </div>
+        </div>
+<%- include('../includes/footer.ejs') %> 

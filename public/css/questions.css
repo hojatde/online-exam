@@ -1,0 +1,225 @@
+
+@media only screen and (max-width:920px){
+    .box{
+        width: 700px;
+        margin: auto;
+        padding: 10px;
+        border: 3px solid burlywood;
+        border-radius: 2px;
+    }
+    
+    .questionBox{
+        width: 650px;
+        margin: auto;
+        border: 6px inset rgb(184, 115, 94);
+    }
+    
+    .question{
+        direction: ltr;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    
+    .question p{
+        text-align: left;
+        direction: ltr;
+    }
+    
+    .textArea{
+        margin-top: 10px;
+    }
+    
+    .question textarea{
+        margin-top: 10px;
+        resize: none;
+        border: none;
+        border-radius: 3px;
+        background-color: rgb(198, 198, 228);
+        direction: ltr;
+        padding-left: 10px;
+        width: 98%;
+        height: 30px;
+        margin: auto;
+        font-size: 12px;
+    }
+    .question img{
+        margin: auto;
+        display: block;
+        max-width: 600px;
+        max-height: 200px;
+    }
+    .question input{
+        
+        margin-top: 15px;
+        margin-bottom: 15px;
+        text-align: center;
+        display: inline-block;
+        border-radius: 2px;
+        background-color: rgb(175, 230, 230);
+    }
+    .selectImageBox{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding-right: 10px;
+    }
+    #sendAnswer {
+        margin: auto;
+        display: block;
+        border:none;
+        border-radius: 3px;
+        background-color: steelblue;
+        padding: 5px 15px 5px 15px;
+        color: white;
+    }
+}
+@media only screen and (max-width:600px){
+    body{
+        font-size: 10px;
+    }
+    .box{
+        width: 320px;
+        margin: auto;
+        padding: 10px;
+        border: 3px solid burlywood;
+        border-radius: 2px;
+    }
+    
+    .questionBox{
+        width: 310px;
+        margin: auto;
+        border: 6px inset rgb(184, 115, 94);
+    }
+    
+    .question{
+        direction: ltr;
+        border-radius: 5px;
+        padding: 5px;
+    }
+    
+    .question p{
+        text-align: left;
+        direction: ltr;
+    }
+    
+    .textArea{
+        margin-top: 7px;
+    }
+    
+    .question textarea{
+        margin-top: 5px;
+        resize: none;
+        border: none;
+        border-radius: 3px;
+        background-color: rgb(198, 198, 228);
+        direction: ltr;
+        padding-left: 5px;
+        width: 98%;
+        height: 30px;
+        margin: auto;
+        font-size: 10px;
+    }
+    .question img{
+        margin: auto;
+        display: block;
+        max-width: 320px;
+        max-height: 100px;
+    }
+    .question input{
+        
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+        display: inline-block;
+        border-radius: 2px;
+        background-color: rgb(175, 230, 230);
+    }
+    .selectImageBox{
+        width: 50%;
+        font-size: 10px;
+        margin-top: 7px;
+        margin-bottom: 7px;
+        padding-right: 5px;
+    }
+    #sendAnswer {
+        margin: auto;
+        display: block;
+        border:none;
+        border-radius: 3px;
+        background-color: steelblue;
+        padding: 5px 10px 5px 10px;
+        color: white;
+    }
+}
+@media only screen and (min-width:920px){
+    .box{
+        width: 800px;
+        margin: auto;
+        padding: 20px;
+        border: 3px solid burlywood;
+        border-radius: 2px;
+    }
+    
+    .questionBox{
+        width: 780px;
+        margin: auto;
+        border: 6px inset rgb(184, 115, 94);
+    }
+    
+    .question{
+        direction: ltr;
+        border-radius: 5px;
+        padding: 20px;
+    }
+    
+    .question p{
+        text-align: left;
+        direction: ltr;
+    }
+    
+    .textArea{
+        margin-top: 15px;
+    }
+    
+    .question textarea{
+        margin-top: 10px;
+        resize: none;
+        border: none;
+        border-radius: 3px;
+        background-color: rgb(198, 198, 228);
+        direction: ltr;
+        padding-left: 10px;
+        width: 98%;
+        height: 40px;
+        margin: auto;
+        font-size: 20px;
+    }
+    .question img{
+        margin: auto;
+        display: block;
+        max-width: 750px;
+        max-height: 200px;
+    }
+    .question input{
+        
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+        display: inline-block;
+        border-radius: 2px;
+        background-color: rgb(175, 230, 230);
+    }
+    .selectImageBox{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding-right: 10px;
+    }
+    #sendAnswer {
+        margin: auto;
+        display: block;
+        border:none;
+        border-radius: 3px;
+        background-color: steelblue;
+        padding: 5px 20px 5px 20px;
+        color: white;
+    }
+}

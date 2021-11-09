@@ -1,0 +1,348 @@
+@font-face{
+    font-family: 'myFont';
+    src: url('../fonts/Vazir-Black.eot');
+    src: url('../fonts/Vazir-Black.woff') format('woff'),url('../fonts/Vazir-Black.woff2') format('woff2');
+}
+body{
+    font-family: myFont;
+}
+
+
+@media only screen and (max-width:920px){
+    html{
+        width: 750px;
+        margin: auto;
+        float: right;
+        direction: rtl;
+        padding: 8px;
+    }      
+    .titleWebsite{
+        margin: auto;   
+    }
+    .titleWebsite p{
+        font-size: 15px;
+        color: rgb(78 78 87);
+        display: block;
+        text-align: center;
+        text-shadow: 2px 2px 15px;
+    }
+    
+    .navigation{
+        background-color: rgb(65, 65, 68);
+        padding: 8px;
+        border-radius: 5px;
+        display: flex;
+        justify-content:space-between;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .navigation a{
+        font-size: 13px;
+        padding-right: 5px;
+        text-decoration: none;
+        color: #FFEB3B;
+    }
+    .navigation a{
+        text-shadow: 2px 2px 8px rgb(160, 160, 45);
+    }
+    
+    .center{
+        min-height: 300px;
+    }
+    
+    .HomePage{
+        padding-right: 15px;
+    }
+    
+    #logout{
+        border: none;
+        padding: 5px 10px 5px 10px;
+        background-color: rgb(215 104 96);
+        border-radius: 2px;
+        font-family: myFont;
+    }
+    
+    .footer{
+        text-align: center;
+        width: 730px;
+        background-color: rgb(65, 65, 68);
+        padding: 4px;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+    
+    .footer p{
+        color: #FFEB3B;
+    }
+    
+    .table{
+        margin-top: 20px !important;
+        padding: 10px;
+        margin: auto;
+        border: none;
+        text-align: center;
+        border-collapse: collapse;
+    }
+    
+    .table td, th {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+    
+    .table th {
+      padding-top: 8px;
+      padding-bottom: 12px;
+      background-color: #6ca7ac;
+      color: white;
+    }
+    
+    #deleteButton{
+        color: white;
+        padding: 5px 10px 5px 10px;
+        border-radius: 5px;
+        background-color: rgb(231, 116, 116);
+        border: none;
+    }
+}
+@media only screen and (max-width:600px){
+    html{
+        width: 350px;
+        margin: auto;
+        float: right;
+        direction: rtl;
+        padding: 1px;
+    }      
+    .titleWebsite{
+        margin: auto;   
+    }
+    .titleWebsite p{
+        font-size: 20px;
+        color: rgb(78 78 87);
+        display: block;
+        text-align: center;
+        text-shadow: 2px 2px 15px;
+    }
+    
+    .navigation{
+        background-color: rgb(65, 65, 68);
+        padding: 5px;
+        border-radius: 5px;
+        display: flex;
+        justify-content:space-between;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-bottom: 5px;
+    }
+    
+    .navigation a{
+        font-size: 12px;
+        text-decoration: none;
+        color: #FFEB3B;
+    }
+    .navigation a{
+        text-shadow: 2px 2px 8px rgb(160, 160, 45);
+    }
+    
+    .center{
+        min-height: 500px;
+    }
+    
+    .HomePage{
+        padding-right: 5px;
+    }
+    
+    #logout{
+        border: none;
+        padding: 5px 10px 5px 10px;
+        background-color: rgb(215 104 96);
+        border-radius: 2px;
+        font-family: myFont;
+    }
+    
+    .footer{
+        text-align: center;
+        width: 330px;
+        background-color: rgb(65, 65, 68);
+        padding: 3px;
+        border-radius: 5px;
+        margin-top: 20px;
+        font-size: 15px;
+    }
+    
+    .footer p{
+        color: #FFEB3B;
+    }
+    
+    .table{
+        margin-top: 20px !important;
+        padding: 20px;
+        margin: auto;
+        border: none;
+        text-align: center;
+        border-collapse: collapse;
+    }
+    
+    .table td, th {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+    
+    .table th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      background-color: #6ca7ac;
+      color: white;
+    }
+    
+    #deleteButton{
+        color: white;
+        padding: 5px 20px 5px 20px;
+        border-radius: 5px;
+        background-color: rgb(231, 116, 116);
+        border: none;
+    }
+}
+
+
+@media only screen and (min-width:920px){
+    html{
+        width: 1100px;
+        margin: auto;
+        float: right;
+        direction: rtl;
+        padding: 10px;
+    }    
+    .titleWebsite{
+        margin: auto;   
+    }
+    .titleWebsite p{
+        font-size: 25px;
+        color: rgb(78 78 87);
+        display: block;
+        text-align: center;
+        text-shadow: 2px 2px 15px;
+    }
+    
+    .navigation{
+        background-color: rgb(65, 65, 68);
+        padding: 10px;
+        border-radius: 5px;
+        display: flex;
+        justify-content:space-between;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .navigation a{
+        font-size: 22px;
+        padding-right: 10px;
+        text-decoration: none;
+        color: #FFEB3B;
+    }
+    .navigation a{
+        text-shadow: 2px 2px 8px rgb(160, 160, 45);
+    }
+    
+    .center{
+        min-height: 500px;
+    }
+    
+    .HomePage{
+        padding-right: 30px;
+    }
+    
+    #logout{
+        border: none;
+        padding: 5px 20px 5px 20px;
+        background-color: rgb(215 104 96);
+        border-radius: 2px;
+        font-family: myFont;
+    }
+    
+    .footer{
+        text-align: center;
+        width: 100%;
+        background-color: rgb(65, 65, 68);
+        padding: 10px;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+    
+    .footer p{
+        color: #FFEB3B;
+    }
+    
+    .table{
+        margin-top: 20px !important;
+        padding: 20px;
+        margin: auto;
+        border: none;
+        text-align: center;
+        border-collapse: collapse;
+    }
+    
+    .table td, th {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+    
+    .table th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      background-color: #6ca7ac;
+      color: white;
+    }
+    
+    #deleteButton{
+        color: rgb(241, 230, 230);
+        padding: 5px 20px 5px 20px;
+        border-radius: 5px;
+        background-color: rgb(231, 116, 116);
+        border: none;
+    }
+}
+
+progress{
+    width: 60%;
+    background-color: rgb(255, 255, 255);
+    color: brown;
+    border-radius: 10px;
+}
+
+.boxProgress{
+    text-align: center;
+    margin-top: 10px;
+    border-top: 3px solid black;
+}
+
+.showMessage{
+    position: fixed;
+    display: none;
+    text-align: center;
+    border-radius: 2px;
+    top: 40px;
+    right: 50%;
+    margin-right: -250px;
+    width: 500px;
+    border-radius: 5px;
+}
+
+.succsesfulOperation{
+    padding: 20px;
+    display: none;
+    background-color: rgb(72, 181, 72);
+    color: white;
+}
+.failedOperation{
+    padding: 20px;
+    display: none;
+    background-color: rgb(231, 102, 102);
+    color: white;
+}
+#fa{
+    direction:ltr;
+    text-align:center;
+}

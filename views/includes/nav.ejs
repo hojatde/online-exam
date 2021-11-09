@@ -1,0 +1,43 @@
+<!-- <div class="navigation">
+    <div class="titleWebsite">
+        <p>سامانه برگزاری آزمون آنلاین</p>
+    </div>
+</div> -->
+<div class="titleWebsite">
+    <p>سامانه برگزاری آزمون آنلاین</p>
+</div>
+
+<div class="navigation"> 
+    <div>
+        <% if(isAdmin){ %>
+            <a href="/admin/addTeacher">اضافه کردن دبیر</a>
+            <a href="/admin/addClass">اضافه کردن کلاس</a>
+            <a href="/admin/addTeacherToClass">اضافه کردن دبیر به کلاس</a>
+            <a href="/admin/addStudent">اضافه کردن دانش آموز</a>
+            <a href="/admin/viewClass">نمایش لیست کلاس ها</a>
+            
+        <% }else if(isTeacher) { %>
+            <a href="/teacher/addStudent">اضافه کردن دانش اموز</a>
+            <a href="/teacher/getClasses">کلاس</a>
+        <% }else if (isStudent) { %>   
+            <a href="/class/<%= classId %> ">میز کار</a>
+        <% }else{ %>
+            <a href="/">صفحه اصلی</a>
+        <% } %>   
+    </div>
+    <div>
+        <% if(isLogin){ %>
+            <form action="/logOut" method="POST">
+                <button type="submit" id="logout">خروج</button>
+            </form>
+        <% }else{ %>
+            <a href="/login">ورود</a>
+            <a href="/teacher/login">ورود-دبیر</a>
+            <a href="/admin/login">ورود-ادمین</a>
+        <% } %>   
+    </div>
+    <div class="showMessage" id="showMessage">
+        <p id="succsesfulOperation" class="succsesfulOperation"></p>
+        <p id="failedOperation" class="failedOperation"></p>
+    </div>
+</div>
